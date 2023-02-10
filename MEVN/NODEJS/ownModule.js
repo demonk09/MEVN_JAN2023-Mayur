@@ -7,7 +7,6 @@
 function getCurrentTime() {
     return Date.now();
   }
-  
   /**
    * @Desc Returns the current date in UTC format
    * @params none
@@ -16,7 +15,6 @@ function getCurrentTime() {
   function getCurrentDate() {
     return new Date(Date.now());
   }
-  
   /**
    * @Desc Returns date in the system locale
    * @params date:Date
@@ -30,7 +28,6 @@ function getCurrentTime() {
             message: "Param date cannot be undefined or null",
           };
         }
-    
         if (typeof date === "object" || !(date instanceof Date)) {
           throw {
             name: "InvalidTypeError",
@@ -42,11 +39,9 @@ function getCurrentTime() {
         console.error(error);
       }
     }
-    
     module.exports = {
       getCurrentDate,
       getCurrentTime,
       getLocaleDate,
     };
-
     // console.log(getCurrentDate());
