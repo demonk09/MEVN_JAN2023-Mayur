@@ -1,0 +1,23 @@
+<html >
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="fornull"></p>
+    <p id="forundefined"></p>
+
+    <script>
+      // hoisting
+      x = 5;
+      elem = document.getElementById("demo").innerHTML = x;
+      var x;
+      // hoisting end
+      let nullvariable = null;
+      console.log(nullvariable);
+
+      let undefinedvariable;
+      elem2 = document.getElementById("forundefined").innerHTML = undefinedvariable;
+    </script>
+  </body>
+</html>
