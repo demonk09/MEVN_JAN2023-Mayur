@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      function isEven(num, callbackfunction) {
+        if (4 % 2 === 0) {
+          callbackfunction(true);
+        } else {
+          callbackfunction(false);
+        }
+      }
+      function handleResult(result) {
+        document.getElementById("demo").innerHTML = result;
+      }
+
+      isEven(4, handleResult);
+      isEven(7, handleResult);
+    </script>
+  </body>
+</html>
