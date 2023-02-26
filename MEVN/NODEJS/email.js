@@ -1,4 +1,3 @@
-
 var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
@@ -13,7 +12,7 @@ var mailOptions = {
   from: '2053015@ritindia.edu',
   to: 'mayurdemonk09@gmail.com',
   subject: 'Sending Email using Node.js',
-  text: 'HI from other side'
+  text: 'HI from other mayur'
 };
 
 transporter.sendMail(mailOptions, function(error, info){
