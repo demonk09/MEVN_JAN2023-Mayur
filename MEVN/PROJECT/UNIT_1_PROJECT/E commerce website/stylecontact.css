@@ -1,0 +1,25 @@
+.contat {
+    
+    margin-top: 70px;
+    padding: 20px;   
+        
+}
+
+.containt{
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+
+.child {
+    display: inline-block;
+    /* vertical-align: middle; */
+  }
+  .nextchild{
+    text-align: center;
+    text-align: center;
+    ;
+    margin-top: 4px;
+  }
