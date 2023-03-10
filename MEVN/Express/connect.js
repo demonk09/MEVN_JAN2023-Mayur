@@ -17,7 +17,7 @@ async function findOne() {
 
         let collection = db.collection('user');
 
-        let query ={"name": "mayur"}
+        let query ={"F_nm": "Mayur"}
 
         let res = await collection.findOne(query);
 console.log(res);
